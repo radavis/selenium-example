@@ -1,0 +1,17 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: khnng/java-chromedriver
+    tag: 'latest'
+
+inputs:
+  - name: test-selenium-git
+
+caches:
+  - path: .gradle/
+
+run:
+  path: test-selenium-git/ci/test.sh
