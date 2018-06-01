@@ -1,15 +1,15 @@
 ---
 resources:
-- name: test-selenium-git
+- name: selenium-git-repo
   type: git
   source:
-    uri: "https://github.com/pivotal-kahin-ng/test-selenium"
+    uri: "https://github.com/pivotal-kahin-ng/selenium-example"
 
 jobs:
 - name: run-selenium-tests
   plan:
-  - get: test-selenium-git
+  - get: selenium-git-repo
     trigger: true
   - task: test
     privileged: true
-    file: test-selenium-git/ci/test.yml
+    file: selenium-git-repo/ci/test.yml

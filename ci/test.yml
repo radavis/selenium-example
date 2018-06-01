@@ -8,10 +8,10 @@ image_resource:
     tag: 'latest'
 
 inputs:
-  - name: test-selenium-git
+  - name: selenium-git-repo
 
 caches:
   - path: .gradle/
 
 run:
-  path: test-selenium-git/ci/test.sh
+  path: selenium-git-repo/ci/test.sh
