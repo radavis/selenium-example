@@ -7,7 +7,7 @@ This repository was created as a resource for setting up selenium on future proj
 Clone this repository
 
 ```
-git clone https://github.com/pivotal-kahin-ng/selenium-example.git
+git clone https://github.com/radavis/selenium-example.git
 ```
 
 ### Via IDE
