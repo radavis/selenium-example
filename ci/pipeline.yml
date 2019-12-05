@@ -3,7 +3,7 @@ resources:
 - name: selenium-git-repo
   type: git
   source:
-    uri: "https://github.com/pivotal-kahin-ng/selenium-example"
+    uri: https://github.com/radavis/selenium-example
 
 jobs:
 - name: run-selenium-tests
